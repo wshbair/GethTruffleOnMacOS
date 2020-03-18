@@ -1,27 +1,35 @@
 
 Geth Installation 
 ------------------
-brew tap ethereum/ethereum
-brew install ethereum //it install version 1.9.12-stable
 
-Ethereum init
+```
+brew tap ethereum/ethereum
+brew install ethereum  <-- install Geth version 1.9.12-stable
+```
+
+Ethereum Init
 ---------------
+```
 geth --rpc  --rpccorsdomain "*" --datadir "/Users/wazenshbair/geth-truffle/data" --port "30303" --nodiscover --networkid 3576 --nat "none" init "CommonGenesis.json"
+```
 
 Geth in Mining mode
 ------------------------
+```
 geth --rpc  --rpccorsdomain "*" --datadir "/Users/wazenshbair/geth-truffle/data" --port "30303" --nodiscover --networkid 3576 --nat "none" --allow-insecure-unlock --mine --minerthreads=8 --unlock 0 --password <(echo -n "123") --verbosity 0  console
-
+```
 
 Truffle side
 ------------
-1. npm install // to install truffle 
-2. truffle compile // compile smart contacts 
-3. truffle migrate  // "2_deploy_contracts.js" is addedd in migration folder to deploy the helloworld.sol 
+```
+npm install <-- install truffle 
+truffle compile <-- compile smart contacts 
+truffle migrate  <-- "2_deploy_contracts.js" is addedd in migration folder to deploy the helloworld.sol 
+```
 
-
-Results
+Output Results
 --------
+```
 Starting migrations...
 ======================
 > Network name:    'development'
@@ -81,4 +89,4 @@ Summary
 =======
 > Total deployments:   2
 > Final cost:          0.0097107 ETH
-
+```
