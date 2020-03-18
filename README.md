@@ -1,34 +1,32 @@
 
-### Geth Installation 
-------------------
+## Geth Installation 
 install Geth version 1.9.12-stable
 ```
 brew tap ethereum/ethereum
 brew install ethereum  
 ```
 
-### Ethereum Init
----------------
+## Ethereum Init
+
 ```
 geth --rpc  --rpccorsdomain "*" --datadir "/Users/wazenshbair/geth-truffle/data" --port "30303" --nodiscover --networkid 3576 --nat "none" init "CommonGenesis.json"
 ```
 
-### Geth in Mining mode
-------------------------
+## Geth in Mining mode
 ```
 geth --rpc  --rpccorsdomain "*" --datadir "/Users/wazenshbair/geth-truffle/data" --port "30303" --nodiscover --networkid 3576 --nat "none" --allow-insecure-unlock --mine --minerthreads=8 --unlock 0 --password <(echo -n "123") --verbosity 0  console
 ```
 
-### Truffle side
-------------
+## Truffle side
+
 ```
 npm install  
 truffle compile  
 truffle migrate  
 ```
 
-### Output Results
---------
+## Expected Output Results
+
 ```
 Starting migrations...
 ======================
