@@ -1,10 +1,10 @@
 
 Geth Installation 
 ------------------
-
+install Geth version 1.9.12-stable
 ```
 brew tap ethereum/ethereum
-brew install ethereum  <-- install Geth version 1.9.12-stable
+brew install ethereum  
 ```
 
 Ethereum Init
@@ -22,9 +22,9 @@ geth --rpc  --rpccorsdomain "*" --datadir "/Users/wazenshbair/geth-truffle/data"
 Truffle side
 ------------
 ```
-npm install <-- install truffle 
-truffle compile <-- compile smart contacts 
-truffle migrate  <-- "2_deploy_contracts.js" is addedd in migration folder to deploy the helloworld.sol 
+npm install  
+truffle compile  
+truffle migrate  
 ```
 
 Output Results
