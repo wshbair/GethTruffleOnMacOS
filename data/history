@@ -1,0 +1,6 @@
+miner.start()
+eth.mining
+eth.getBalance(eth.coinbase)
+eth.coinbase
+eth.accounts[0].isLocked
+version
